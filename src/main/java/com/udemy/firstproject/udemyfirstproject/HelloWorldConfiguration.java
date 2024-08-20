@@ -1,5 +1,6 @@
 package com.udemy.firstproject.udemyfirstproject;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 record Person (String name, Integer age) {}
@@ -23,5 +24,6 @@ public class HelloWorldConfiguration {
     public Address address() {
         return new Address("Golf Street","Lucknow","Uttar Pradesh","262701");
     }
+
 
 }
